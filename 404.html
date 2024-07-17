@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next — Discord Bot</title>
+    <style>
+        body {
+            background-color: #FA7E7B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+        }
+        .button.portuguese {
+            background-color: green;
+        }
+        .button.english {
+            background-color: blue;
+        }
+        .button:hover {
+            filter: brightness(0.8);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button class="button portuguese" onclick="location.href='home/pt-br.html'">Português (BR)</button>
+        <button class="button english" onclick="location.href='home/en-us.html'">English (US)</button>
+    </div>
+</body>
+</html>
