@@ -1,82 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next Music</title>
+    <title>Language Selection</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             background-color: #FA7E7B;
-            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .btn {
-            display: inline-block;
+        .box {
             background-color: white;
-            color: #FA7E7B;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .button {
             padding: 10px 20px;
+            margin: 10px;
+            border: none;
             border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #FFA9A6;
-        }
-        .banner {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .logo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        nav {
-            background-color: #FFA9A6;
-            padding: 10px 0;
-        }
-        nav a {
+            cursor: pointer;
             color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-            transition: color 0.3s ease;
+            font-size: 16px;
         }
-        nav a:hover {
-            color: #FA7E7B;
+        .button.portuguese {
+            background-color: green;
+        }
+        .button.english {
+            background-color: blue;
+        }
+        .button:hover {
+            filter: brightness(0.8);
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="termos-de-uso.html">Terms</a>
-    </nav>
-    <div class="container">
-        
-        <img src="assets/images/IMG_1087.png" alt="Logo" class="logo">
-        <h1>Next</h1>
-        <p>I'm a musical Discord bot packed with technology and quality, get to know me! Are you ready to take your experience to the next level?</p>
-        <a href="#" class="btn">Invite me</a>
+    <div class="box">
+        <button href="home/pt.html" class="button portuguese">Português (BR)</button>
+        <button hrep="home/us.html" class="button english">English (US)</button>
     </div>
 </body>
 </html>
